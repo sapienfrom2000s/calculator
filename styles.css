@@ -24,7 +24,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #00000085;
+    background-image: url("./philipp-deus-ymeYzNZGUFg-unsplash.jpg");
 }
 
 .display{
