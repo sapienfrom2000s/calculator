@@ -116,7 +116,7 @@ function result(){
     const resultafterOperation = operate(calculator.operation, Number(calculator.num1), Number(calculator.num2));
     if(Number.isFinite(Number(resultafterOperation)) === false){
         console.log("I was execulted");
-        window.open("https://www.youtube.com/watch?v=riXcZT2ICjA&ab_channel=KhanAcademy");
+        window.open("https://www.youtube.com/watch?v=HI0yi8q38Ik&list=PLk7RtPiJ05L6p2wGPWAO6a8h1OiyT3-Aq&index=14");
         window.location.reload();
     }
     initialize();
