@@ -114,12 +114,18 @@ function result(){
     removenum2Listener();
     removeequaltoListener();
     const resultafterOperation = operate(calculator.operation, Number(calculator.num1), Number(calculator.num2));
+    if(Number.isFinite(Number(resultafterOperation)) === false){
+        console.log("I was execulted");
+        window.open("https://www.youtube.com/watch?v=riXcZT2ICjA&ab_channel=KhanAcademy");
+        window.location.reload();
+    }
     initialize();
     calculator.num1 = resultafterOperation;
     updateDisplay();
     num1Listener();
     operationListener();
     removeleadingMinusListener();
+
 }
 
 function updateDisplay(){

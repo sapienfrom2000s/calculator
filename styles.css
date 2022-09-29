@@ -38,3 +38,7 @@ body{
     grid-area: 5/ 4/ span 1/ span 2;
 }
 
+.zero{
+    grid-area: 5/ 1/ span 1/ span 3;
+
+}
