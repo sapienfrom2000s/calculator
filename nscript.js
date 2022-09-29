@@ -130,7 +130,7 @@ function updateDisplay(){
 function allClear(){
     const clearAll = document.querySelector(".all-clear");
     clearAll.addEventListener("click",function(e){
-        initialize();
+        window.location.reload();
     })
 }
 
@@ -185,6 +185,7 @@ function stripNum1(){
     else{
         // console.log(calculator.num1, calculator.num1.toString().length);
         calculator.num1 = "";
+        leadingMinusListener();
         removeoperationListener();
     }
     updateDisplay();
@@ -193,25 +194,26 @@ function stripNum1(){
 function initialize(){
     resetcalculator();
     num1Listener();
-    updateDisplay();
     leadingMinusListener();
+    updateDisplay();
 }
 
 function leadingMinusListener(){
-    const minus = document.querySelector(".minus");
-    minus.addEventListener("click", leadingMinus())
+    const minusButton = document.querySelector(".minus");
+    minusButton.addEventListener("click", leadingMinus)
 }
 
 function leadingMinus(e){
-    if(calculator.num1 === "" && e.target.innerHTML === "-"){
+    if(calculator.num1 === ""){
         calculator.num1 = "-";
-        removeleadingMinus();
+        removeleadingMinusListener();
+        updateDisplay();
     }
 }
 
 function removeleadingMinusListener(){
-    const minus = document.querySelector(".minus");
-    minus.removeEventListener("click", leadingMinus())
+    const minusButton = document.querySelector(".minus");
+    minusButton.removeEventListener("click", leadingMinus)
 }
 
 initialize();
