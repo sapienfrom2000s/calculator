@@ -4,8 +4,8 @@
 }
 
 .calculator{
-    height: 55%;
-    width: 25%;
+    height: 45vh;
+    width: 65vw;
     padding: 7px;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -14,6 +14,13 @@
     font-size: 30px;
     border-radius: 3%;
     background-color: #cfc9d1;
+}
+
+@media only screen and (min-width: 992px){
+    .calculator{
+        height: 55vh;
+        width: 25vw;
+    }
 }
 
 body{
