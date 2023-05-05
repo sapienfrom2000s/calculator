@@ -1,6 +1,6 @@
 
 .calculator, .display{
-    border: 2px solid rgb(134, 134, 134);
+    border: 2px solid black;
 }
 
 .calculator{
@@ -12,8 +12,7 @@
     grid-template-rows: repeat(5, 1fr);
     gap: 2%;
     font-size: 30px;
-    border-radius: 3%;
-    background-color: #cfc9d1;
+    background-color: #fcfffade;
 }
 
 @media only screen and (min-width: 992px){
@@ -31,7 +30,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("./philipp-deus-ymeYzNZGUFg-unsplash.jpg");
+    background-color: #00000080;
 }
 
 .display{
@@ -41,7 +40,7 @@ body{
     justify-content: flex-end;
     grid-area: 1/ 1/ span 1/ span 5;
     padding: 2%;
-    border-radius: 7%;
+    border-radius: 2%;
 }
 
 .calculator > .equals{
@@ -57,5 +56,5 @@ button {
     font-size: large;
     border: 1px solid rgb(168, 160, 160);
     border-radius: 4%;
-    background-color: #dfe0e5;
+    background-color: #f4f4f4de;
 }
